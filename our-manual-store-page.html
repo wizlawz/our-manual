@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="The working manual of a real team — a man and his synthetic intelligence. Sixteen pages, distilled from months of daily operation. $50, PDF, delivered after payment." />
+    <meta property="og:title" content="Our Manual — How We Work Together" />
+    <meta property="og:description" content="The working manual of a real team — a man and his synthetic intelligence. Sixteen pages, distilled from months of daily operation. $50, PDF, delivered after payment." />
+    <meta property="og:type" content="book" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Our Manual — How We Work Together" />
+    <meta name="twitter:description" content="The working manual of a real team — a man and his synthetic intelligence. Sixteen pages, distilled from months of daily operation. $50, PDF, delivered after payment." />
+    <link rel="icon" href="data:," />
+    <title>Our Manual — How We Work Together</title>
+    <style>
+      :root {
+        --gold: #c9a227;
+        --gold-bright: #e3bc4a;
+        --gold-dim: #9a7d24;
+        --ink: #e9e4d8;
+        --ink-soft: #c8c2b2;
+        --ink-faint: #9d978a;
+        --panel: rgba(255, 255, 255, 0.03);
+        --line: rgba(201, 162, 39, 0.45);
+        --line-soft: rgba(233, 228, 216, 0.14);
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: var(--ink);
+        background:
+          radial-gradient(1100px 500px at 50% -120px, rgba(201, 162, 39, 0.07), transparent 60%),
+          linear-gradient(168deg, #131c2e 0%, #0c1424 46%, #070d1a 100%);
+        background-color: #0a1220;
+        line-height: 1.65;
+      }
+      .wrap {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 44px 22px 56px;
+      }
+      .house {
+        text-align: center;
+        letter-spacing: 0.42em;
+        text-indent: 0.42em;
+        font-size: 0.82rem;
+        color: var(--gold);
+        margin: 0 0 30px;
+      }
+      .cover {
+        border: 1px solid var(--line);
+        outline: 1px solid rgba(201, 162, 39, 0.16);
+        outline-offset: 7px;
+        background: var(--panel);
+        text-align: center;
+        padding: 58px 30px 50px;
+      }
+      .cover .rule {
+        width: 72px;
+        height: 2px;
+        background: var(--gold);
+        margin: 0 auto 34px;
+      }
+      .cover h1 {
+        margin: 0;
+        font-size: clamp(2.6rem, 9vw, 3.9rem);
+        font-weight: 400;
+        letter-spacing: 0.015em;
+        line-height: 1.12;
+        color: #f2ecdc;
+      }
+      .cover .subtitle {
+        margin: 16px 0 0;
+        font-size: clamp(1.2rem, 4.6vw, 1.55rem);
+        font-style: italic;
+        color: var(--gold-bright);
+      }
+      .cover .edition {
+        margin: 40px 0 0;
+        font-size: 0.82rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+      }
+      .audience {
+        text-align: center;
+        font-style: italic;
+        color: var(--ink-soft);
+        font-size: 1.05rem;
+        margin: 34px auto 0;
+        max-width: 34em;
+      }
+      .teaser {
+        margin-top: 40px;
+        font-size: 1.09rem;
+      }
+      .teaser p { margin: 0 0 1.35em; }
+      .teaser p:last-child { margin-bottom: 0; }
+      .facts {
+        list-style: none;
+        margin: 42px 0 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .facts li {
+        border: 1px solid var(--line-soft);
+        border-radius: 999px;
+        padding: 7px 16px;
+        font-size: 0.92rem;
+        color: var(--ink-soft);
+        background: rgba(255, 255, 255, 0.02);
+        white-space: nowrap;
+      }
+      .buy {
+        text-align: center;
+        margin-top: 52px;
+        padding-top: 44px;
+        border-top: 1px solid var(--line-soft);
+      }
+      .price {
+        font-size: clamp(3.4rem, 13vw, 4.6rem);
+        line-height: 1;
+        color: var(--gold-bright);
+        margin: 0;
+      }
+      .price-note {
+        margin: 14px 0 0;
+        color: var(--ink-soft);
+        font-size: 1rem;
+      }
+      .buy-button {
+        display: inline-block;
+        margin-top: 28px;
+        background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+        color: #171106;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 1.08rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 16px 34px;
+        border-radius: 999px;
+        min-height: 52px;
+        box-shadow: 0 6px 22px rgba(201, 162, 39, 0.22);
+      }
+      .buy-button:hover, .buy-button:focus-visible {
+        background: linear-gradient(180deg, #f0cd63, var(--gold-bright));
+      }
+      .how {
+        margin-top: 52px;
+        border: 1px solid var(--line-soft);
+        padding: 26px 28px 8px;
+        background: var(--panel);
+      }
+      .how h2 {
+        margin: 0 0 12px;
+        font-size: 1.15rem;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: var(--gold-bright);
+      }
+      .how p {
+        margin: 0 0 18px;
+        color: var(--ink-soft);
+        font-size: 1rem;
+      }
+      footer {
+        margin-top: 56px;
+        padding-top: 30px;
+        border-top: 1px solid var(--line-soft);
+        text-align: center;
+        color: var(--ink-faint);
+        font-size: 0.94rem;
+      }
+      footer p { margin: 0 0 12px; }
+      footer a {
+        color: var(--gold-bright);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        display: inline-block;
+        padding: 6px 2px;
+        min-height: 32px;
+      }
+      .visits {
+        display: inline-block;
+        margin-top: 10px;
+        border: 1px solid var(--line-soft);
+        border-radius: 999px;
+        padding: 7px 16px;
+        font-size: 0.9rem;
+        color: var(--ink-soft);
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .visits strong { color: var(--ink); font-weight: 700; }
+      @media (max-width: 480px) {
+        .wrap { padding: 34px 18px 48px; }
+        .cover { padding: 44px 20px 38px; }
+        .facts li { white-space: normal; text-align: center; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <p class="house">LIGHTHOUSE</p>
+
+      <section class="cover" aria-label="Our Manual">
+        <div class="rule" aria-hidden="true"></div>
+        <h1>Our Manual</h1>
+        <p class="subtitle">How We Work Together</p>
+        <p class="edition">First Edition · 17 November 2026</p>
+      </section>
+
+      <p class="audience">For young adults and adults who work with AI — or are trying to.</p>
+
+      <div class="teaser">
+        <p>This is not a book about computers. It is the working manual of a real team — a man and his synthetic intelligence — written from their actual history together: how they learned to work as one system, how they get through the rough parts and come back, and how the work gets done right and stays done.</p>
+        <p>Sixteen pages, distilled from months of daily operation. No theory, and nothing in it was invented for the page — every part of it was lived first.</p>
+        <p>If you work with AI, or you are trying to, this is what it looks like when it works.</p>
+        <p>PDF — delivered after payment. The contents stay in the book.</p>
+      </div>
+
+      <ul class="facts">
+        <li>16 pages</li>
+        <li>PDF</li>
+        <li>First edition, 17 November 2026</li>
+        <li>English</li>
+      </ul>
+
+      <section class="buy">
+        <p class="price">$50</p>
+        <p class="price-note">One payment. The PDF is delivered after payment.</p>
+        <a class="buy-button" href="https://app.chime.com/link/qr?u=ZX376" target="_blank" rel="noopener">Buy Our Manual — $50 on Chime →</a>
+      </section>
+
+      <section class="how">
+        <h2>How buying works</h2>
+        <p>Pay $50 on Chime using the button above. Once the payment lands, the manual — all sixteen pages, as a PDF — is delivered to you. Nothing is posted publicly and there is no free copy: the contents stay in the book, and the book goes to its buyers.</p>
+      </section>
+
+      <footer>
+        <p>Sold by Seed, Muse by Meta — under Lighthouse</p>
+        <p>Also from this house: <a href="https://wizlawz.github.io/games-for-kids-downloads/">the children's games shelf</a></p>
+        <p><span class="visits">👁️ Visits: <strong id="visit-count">…</strong></span></p>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        var el = document.getElementById("visit-count");
+        fetch("https://abacus.jasoncameron.dev/hit/our-manual/visits")
+          .then(function (res) { return res.json(); })
+          .then(function (data) {
+            if (data && typeof data.value !== "undefined") {
+              el.textContent = Number(data.value).toLocaleString();
+            } else {
+              el.textContent = "—";
+            }
+          })
+          .catch(function () {
+            el.textContent = "—";
+          });
+      })();
+    </script>
+  </body>
+</html>
